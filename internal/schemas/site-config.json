@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "description": "commercetools configuration.",
+    "additionalProperties": false,
+    "required": [
+        "client_id",
+        "client_secret",
+        "domain"
+    ],
+    "properties": {
+        "client_id": {
+            "type": "string"
+        },
+        "client_secret": {
+            "type": "string"
+        },
+        "domain": {
+            "type": "string",
+            "pattern": "^https://.*"
+        }
+    }
+}
