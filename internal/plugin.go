@@ -113,13 +113,13 @@ func (p *Plugin) TerraformRenderResources(site string) (string, error) {
 
 	template := `
 		provider "commercelayer" {
-			client_id     = {{ .Settings.ClientID|printf "%q" }}
-			client_secret = {{ .Settings.ClientSecret|printf "%q" }}
-			api_endpoint  = {{ .ApiEndpoint|printf "%q" }}
-			auth_endpoint = {{ .AuthEndpoint|printf "%q" }}
+			{{ renderProperty "client_id" .Settings.ClientID }}
+			{{ renderProperty "client_secret" .Settings.ClientSecret }}
+			{{ renderProperty "api_endpoint" .ApiEndpoint }}
+			{{ renderProperty "auth_endpoint" .AuthEndpoint }}
 		}
 	`
-	return RenderGoTemplate(template, templateContext)
+	return helpers.RenderGoTemplate(template, templateContext)
 }
 
 func (p *Plugin) RenderTerraformComponent(site string, component string) (*schema.ComponentSchema, error) {
