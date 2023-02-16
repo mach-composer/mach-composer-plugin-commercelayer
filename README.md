@@ -6,6 +6,13 @@ This repository contains the Commercelayer plugin for Mach Composer. It requires
 ## Usage
 
 ```yaml
+mach_composer:
+  version: 1
+  plugins:
+    azure:
+      source: mach-composer/commercelayer
+      version: 0.0.3
+
 global:
   # ...
 
