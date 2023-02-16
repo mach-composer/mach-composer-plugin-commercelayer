@@ -1,4 +1,4 @@
-# Commercetools Plugin for Mach Composer
+# Commercelayer Plugin for Mach Composer
 
 This repository contains the Commercelayer plugin for Mach Composer. It requires Mach Composer > 2.5
 
