@@ -4,7 +4,6 @@ go 1.19
 
 require (
 	github.com/creasty/defaults v1.6.0
-	github.com/davecgh/go-spew v1.1.1
 	github.com/mach-composer/mach-composer-plugin-helpers v0.0.4
 	github.com/mach-composer/mach-composer-plugin-sdk v0.0.6
 	github.com/mitchellh/mapstructure v1.5.0
@@ -14,6 +13,7 @@ require (
 require (
 	github.com/agext/levenshtein v1.2.3 // indirect
 	github.com/apparentlymart/go-textseg/v13 v13.0.0 // indirect
+	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/fatih/color v1.13.0 // indirect
 	github.com/flosch/pongo2/v5 v5.0.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect

@@ -2,10 +2,8 @@ package internal
 
 import (
 	"fmt"
-	"log"
 
 	"github.com/creasty/defaults"
-	"github.com/davecgh/go-spew/spew"
 	"github.com/mach-composer/mach-composer-plugin-helpers/helpers"
 	"github.com/mach-composer/mach-composer-plugin-sdk/plugin"
 	"github.com/mach-composer/mach-composer-plugin-sdk/schema"
@@ -128,7 +126,6 @@ func (p *Plugin) RenderTerraformComponent(site string, component string) (*schem
 			"commercelayer = commercelayer",
 		},
 	}
-	log.Println(spew.Sdump(result))
 	return result, nil
 }
 
