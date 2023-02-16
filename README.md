@@ -9,7 +9,7 @@ This repository contains the Commercelayer plugin for Mach Composer. It requires
 mach_composer:
   version: 1
   plugins:
-    azure:
+    commercelayer:
       source: mach-composer/commercelayer
       version: 0.0.3
 
