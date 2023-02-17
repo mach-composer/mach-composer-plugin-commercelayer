@@ -19,7 +19,7 @@ global:
 sites:
   - identifier: my-site
 
-    comemrcelayer:
+    commercelayer:
       client_id: client-id
       client_secret: client-secret
       domain: https://<your-domain>.commercelayer.io
