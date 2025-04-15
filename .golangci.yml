@@ -4,9 +4,9 @@ linters:
   - asciicheck
   - bodyclose
   - contextcheck
+  - copyloopvar
   - errcheck
   - exhaustive
-  - exportloopref
   - forcetypeassert
   - goimports
   - gosimple
@@ -14,7 +14,7 @@ linters:
   - ineffassign
   - predeclared
   - staticcheck
-  - tenv
+  - usetesting
   - typecheck
   - unused
   - whitespace
