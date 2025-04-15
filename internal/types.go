@@ -14,5 +14,5 @@ func (s *SiteConfig) ApiEndpoint() (string, error) {
 	return url.JoinPath(s.Domain, "/api")
 }
 func (s *SiteConfig) AuthEndpoint() (string, error) {
-	return url.JoinPath(s.Domain, "/oauth/token")
+	return url.JoinPath("https://auth.commercelayer.io/oauth/token")
 }
